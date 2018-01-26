@@ -21,7 +21,8 @@ module.exports = function($q, $http){
                     note,
                     uid
                 }
-            );
+            )
+            .then(data => resolve(data));
         });
     };
 

@@ -2,12 +2,12 @@
     <h1>Register</h1>
     <div>
         <label for="userName">User Name:</label>
-        <input type="text" id="userName" ng-model="userName">
+        <input type="text" id="userName" ng-model="user.email">
         <br/>
         <label for="password1">Repeat Password:</label>
-        <input type="password" id="password1" ng-model="password1">
+        <input type="password" id="password1" ng-model="user.password">
         <label for="password2">Repeat Password:</label>
         <input type="password" id="password2" ng-model="password2">
-        <button ng-click="registerUser({'email': userName, 'password': password1});">Register</button>
+        <button ng-click="registerUser({'email': user.email, 'password': user.password});">Register</button>
     </div>
 </div>
