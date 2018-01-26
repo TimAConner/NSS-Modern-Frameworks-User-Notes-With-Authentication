@@ -31,7 +31,7 @@ app.config(function($routeProvider){
         templateUrl: '../partials/noteList.html',
         controller: "NoteListCtrl"
     })
-    .otherwise("/register");
+    .otherwise("/login");
 });
 
 module.exports = app;

@@ -6,6 +6,7 @@
   "dependencies": {
     "angular": "^1.6.8",
     "angular-route": "^1.6.8",
+    "angular-state-router": "^3.2.4",
     "firebase": "^4.9.0",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.2.0",

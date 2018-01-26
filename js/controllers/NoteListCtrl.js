@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function($scope, NoteFactory, AuthFactory){
+module.exports = function($scope, $window, NoteFactory, AuthFactory){
     let user = AuthFactory.getCurUser();
     if(user){
         NoteFactory.getNotes(user.uid).then(noteData => {
@@ -8,6 +8,6 @@ module.exports = function($scope, NoteFactory, AuthFactory){
             $scope.noteList = Object.values(noteData.data);
         });
     } else {
-        console.log('no user');
+        $window.location.href = '#!/login';
     }
 };
