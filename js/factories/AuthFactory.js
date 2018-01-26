@@ -1,7 +1,7 @@
 'use strict';
 const firebase = require("firebase");
 
-module.exports = function($q, $http, FIREBASE_CONFIG){
+module.exports = function($q, $http){
 
     // Returns true if user is authenticated.
     const isAuthenticated = () => {
@@ -11,7 +11,7 @@ module.exports = function($q, $http, FIREBASE_CONFIG){
 
     // Returns email, user id of currently logged in user.
     const getCurUser = () => {
-        return firebase.auth().currentUser();
+        return firebase.auth().currentUser;
     };
 
     // Logs current user out.
