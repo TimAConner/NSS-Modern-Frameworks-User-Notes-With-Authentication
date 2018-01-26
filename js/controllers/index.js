@@ -3,4 +3,5 @@
 const app = require('angular').module("userNotesWAuthApp");
 
 // Add controls below
-app.controller('AuthCtrl', require('./AuthCtrl'));
+app.controller('RegisterCtrl', require('./RegisterCtrl'));
+app.controller('LoginCtrl', require('./LoginCtrl'));
