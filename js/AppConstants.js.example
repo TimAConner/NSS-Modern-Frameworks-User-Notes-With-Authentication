@@ -1,9 +1,15 @@
 "use strict";
 
-app.constant("FIREBASE_CONFIG", {
+const app = require('angular').module("userNotesWAuthApp");
+const firebase = require('firebase');
+
+let firebaseConfig =  {
     apiKey: "",
     authDomain: "",
     databaseURL: "",
+    projectId: "",
     storageBucket: "",
     messagingSenderId: ""
-});
+};
+
+firebase.initializeApp(firebaseConfig);
