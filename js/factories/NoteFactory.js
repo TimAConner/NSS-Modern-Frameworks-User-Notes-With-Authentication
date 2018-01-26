@@ -17,4 +17,6 @@ module.exports = function($q, $http){
             );
         });
     };
+
+    return {saveNote, getNotes};
 };

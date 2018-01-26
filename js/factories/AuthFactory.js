@@ -11,7 +11,7 @@ module.exports = function($q, $http){
 
     // Returns email, user id of currently logged in user.
     const getCurUser = () => {
-        return firebase.auth().currentUser;
+        return firebase.auth().currentUser; 
     };
 
     // Logs current user out.
