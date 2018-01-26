@@ -1,6 +1,6 @@
 "use strict";
 
-const app = require('angular').module("testApp");
+const app = require('angular').module("userNotesWAuthApp");
 
 // Add controls below
-app.controller('HomeCtrl', require('./HomeCtrl'));
+app.controller('AuthCtrl', require('./AuthCtrl'));

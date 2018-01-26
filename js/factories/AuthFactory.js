@@ -1,8 +1,7 @@
 'use strict';
 const firebase = require("firebase");
 
-module.exports = function($q, $http, $rootScope, FIREBASE_CONFIG){
-    let currentUserData = null;
+module.exports = function($q, $http, FIREBASE_CONFIG){
 
     // Returns true if user is authenticated.
     const isAuthenticated = () => {
