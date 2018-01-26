@@ -27,7 +27,11 @@ app.config(function($routeProvider){
         templateUrl: '../partials/newNote.html',
         controller: "NewNoteCtrl"
     })
-    .otherwise("/");
+    .when("/notes", {
+        templateUrl: '../partials/noteList.html',
+        controller: "NoteListCtrl"
+    })
+    .otherwise("/register");
 });
 
 module.exports = app;
