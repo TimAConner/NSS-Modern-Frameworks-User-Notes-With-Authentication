@@ -15,9 +15,17 @@ require('./controllers');
 // Put routes here
 app.config(function($routeProvider){
     $routeProvider
-    .when("/", {
+    .when("/register", {
         templateUrl: '../partials/register.html',
-        controller: "AuthCtrl"
+        controller: "RegisterCtrl"
+    })
+    .when("/login", {
+        templateUrl: '../partials/login.html',
+        controller: "LoginCtrl"
+    })
+    .when("/new", {
+        templateUrl: '../partials/newNote.html',
+        controller: "NewNoteCtrl"
     })
     .otherwise("/");
 });
